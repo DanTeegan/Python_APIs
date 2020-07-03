@@ -7,10 +7,10 @@
 
 # Write "pip install requests" in the pycharm terminal
 
-import requests
+# import requests
 
 # Check HTTP/HTTPS 200 = Success - 400 - 404 page not found.
-response_bbc = requests.get("https://www.bbc.co.uk/") # Here we have created a variable.
+# response_bbc = requests.get("https://www.bbc.co.uk/") # Here we have created a variable.
 
 # print(response_bbc.status_code) # status.code presents the data in more of a readable format
 #
@@ -47,13 +47,16 @@ response_bbc = requests.get("https://www.bbc.co.uk/") # Here we have created a v
 
 # Creating a function called check_response_code to check the status_code
 # Iteration 2
-def check_response_code():
-    if response_bbc.status_code == 200:
-        print("Success your in!")
-    elif response_bbc.status_code == 400:
-        print("Page not found")
-    elif response_bbc.status_code == 404:
-        print("oops sorry something went wrong")
-    else:
-        print("Could not identify the status code, Please try another website")
+# def check_response_code():
+#     if response_bbc.status_code == 200:
+#         print("Success your in!")
+#     elif response_bbc.status_code == 400:
+#         print("Page not found")
+#     elif response_bbc.status_code == 404:
+#         print("oops sorry something went wrong")
+#     else:
+#         print("Could not identify the status code, Please try another website")
+
+from python_request_module import check_response_code
+
 print(check_response_code())
