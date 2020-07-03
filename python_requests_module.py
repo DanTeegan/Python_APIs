@@ -7,7 +7,7 @@
 
 # Write "pip install requests" in the pycharm terminal
 
-# import requests
+import requests
 
 # Check HTTP/HTTPS 200 = Success - 400 - 404 page not found.
 response_bbc = requests.get("https://www.bbc.co.uk/") # Here we have created a variable.
