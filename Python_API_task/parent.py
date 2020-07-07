@@ -13,3 +13,4 @@ def check_response_code():
         print("oops sorry something went wrong")
     else:
         print("Could not identify the status code, Please try another website")
+

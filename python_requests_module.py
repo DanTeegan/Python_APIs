@@ -13,7 +13,7 @@ import requests
 # response_bbc = requests.get("https://www.bbc.co.uk/") # Here we have created a variable.
 post_codes_req = requests.get ("https://api.postcodes.io/postcodes/N135PG")
 
-print(post_codes_req.status_code)
+# print(post_codes_req.status_code)
 # Why we should use built in packages
 # First iteration
 # if post_codes_req.status_code == 200:
@@ -22,17 +22,25 @@ print(post_codes_req.status_code)
 #     print("sorry not available")
 
 # Second iteration
-if post_codes_req.status_code:
-    print("Sucess")
-elif post_codes_req.status_code:
-    print("sorry not available")
+# if post_codes_req.status_code:
+#     print("Sucess")
+# elif post_codes_req.status_code:
+#     print("sorry not available")
 
 # Third iteration - Create the same functionality with OOP class and a method
-def check_reponse:
+
+
+
+
+def check_status_code():
+    
     if post_codes_req.status_code:
         print("Sucess")
     elif post_codes_req.status_code:
         print("sorry not available")
+
+check_response = Response()
+print(check_response())
 
 
 
